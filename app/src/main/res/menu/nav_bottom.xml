@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/bottom_nav_first"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="First"
+        />
+    <item
+        android:id="@+id/bottom_nav_second"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Second"
+        />
+    <item
+        android:id="@+id/bottom_nav_third"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Third"
+        />
+    <item
+        android:id="@+id/bottom_nav_fourth"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Fourth"
+        />
+</menu>
+

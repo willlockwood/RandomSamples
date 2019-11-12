@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment"
+    >
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.willlockwood.lockwoodtakehome.fragment.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_statePagerFragment"
+            app:destination="@id/statePagerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pagerFragment"
+            app:destination="@id/pagerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recyclerFragment"
+            app:destination="@id/recyclerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_recyclerSwipeFragment"
+            app:destination="@id/recyclerSwipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.willlockwood.lockwoodtakehome.fragment.PagerFragment"
+        android:label="PagerFragment" />
+    <fragment
+        android:id="@+id/statePagerFragment"
+        android:name="com.willlockwood.lockwoodtakehome.fragment.StatePagerFragment"
+        android:label="StatePagerFragment" />
+<!--    <fragment-->
+<!--        android:id="@+id/recyclerViewSwipeFragment"-->
+<!--        android:name="com.willlockwood.lockwoodtakehome.fragment.RecyclerViewSwipeFragment"-->
+<!--        android:label="RecyclerViewSwipeFragment" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/recyclerViewFragment"-->
+<!--        android:name="com.willlockwood.lockwoodtakehome.fragment.RecyclerViewFragment"-->
+<!--        android:label="RecyclerViewFragment" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/viewStatePagerFragment"-->
+<!--        android:name="com.willlockwood.lockwoodtakehome.fragment.ViewStatePagerFragment"-->
+<!--        android:label="ViewStatePagerFragment" />-->
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.willlockwood.lockwoodtakehome.preferences.PreferencesFragment"
+        android:label="fragment_settings" />
+    <action
+        android:id="@+id/action_global_settings"
+        app:destination="@id/settings" />
+    <fragment
+        android:id="@+id/recyclerFragment"
+        android:name="com.willlockwood.lockwoodtakehome.fragment.RecyclerFragment"
+        android:label="RecyclerFragment" />
+    <fragment
+        android:id="@+id/recyclerSwipeFragment"
+        android:name="com.willlockwood.lockwoodtakehome.fragment.RecyclerSwipeFragment"
+        android:label="RecyclerSwipeFragment" />
+
+
+</navigation>
